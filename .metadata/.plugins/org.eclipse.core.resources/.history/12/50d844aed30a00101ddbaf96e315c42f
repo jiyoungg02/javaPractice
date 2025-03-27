@@ -1,0 +1,16 @@
+package ch06.unit02;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		
+	}
+}
+
+class Test2{
+	private int a = 0;
+	int b = 20;
+	protected int c = 30;
+	public int d = 40;
+	
+}

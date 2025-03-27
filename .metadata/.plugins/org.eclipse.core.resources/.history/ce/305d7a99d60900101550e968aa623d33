@@ -1,0 +1,10 @@
+package ch05.unit01;
+
+public class Ex06 {
+
+	public static void main(String[] args) {
+		//1~100까지 수중 서로 다른 난수 발생
+		
+		
+	}
+}

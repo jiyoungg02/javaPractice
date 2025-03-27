@@ -1,0 +1,14 @@
+package ch05.unit02;
+
+/*
+	5의 배수이면 행 증가
+	행이 범위를 벗어나면 열 증가 행은 최대 행으로 이동
+	열이 범위를 벗어나면 최소 열로 행은 하나 감소 
+*/
+
+public class Quiz08 {
+
+	public static void main(String[] args) {
+		
+	}
+}

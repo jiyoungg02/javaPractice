@@ -1,0 +1,35 @@
+package ch05.unit01;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Quiz02 {
+
+	public static void main(String[] args) {
+		int []score = new int[5];
+		int sum = 0, result;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		for(int i=0; i<5; i++) {
+			System.out.print(i + "번째 점수 : ");
+			score[i] = sc.nextInt();
+			if(score[i] < 0 || score[i] > 10) {
+				i--;
+			}
+		}
+		
+		for(int n : score) {
+			System.out.printf("점수 리스트 : %d\t", score[n]);
+			sum += score[n];
+		}
+		System.out.println();
+		
+		Arrays.sort(score);
+		
+		result = sum - score[0] - score[4];
+		System.out.println("취득 점수 : " + result);
+		
+		sc.close();
+	}
+}

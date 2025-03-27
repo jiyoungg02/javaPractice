@@ -1,0 +1,22 @@
+package ch06.unit02;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		
+	}
+}
+
+// 클래스 : 데이터(필드)+ 기능(메소드)으로 구성
+class Test2{
+	// 필드(인스턴스변수)
+	private int a = 0;
+	int b = 20;
+	protected int c = 30;
+	public int d = 40;
+	
+	// ㅁ메소드 (인스턴스 메소드)
+	public void disp() {
+		System.out.println(a + ":" + b + ":" + c + ":" + d);
+	}
+}

@@ -1,0 +1,25 @@
+package ch06.unit02;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		
+		
+	}
+}
+
+// 클래스 : 데이터(필드)+ 기능(메소드)으로 구성
+// 필드를 초기화 하지 않으면 객체가 생성되는 시점에
+// 객체는 null, 숫자변수는 0으로 초기화 된다.
+class Test1 {
+	// 필드선언(인스턴스 변수)
+	String name; // 객체가 생성될때 null로 초기화
+	int score;   // 객체가 생성될때 0으로 초기화
+	int age;     // 객체가 생성될때 0으로 초기화
+	
+	// 메소드(인스턴스 메소드)
+	public void write() {
+		System.out.println(name + " : " + score + " : " + age);
+	}
+	
+}

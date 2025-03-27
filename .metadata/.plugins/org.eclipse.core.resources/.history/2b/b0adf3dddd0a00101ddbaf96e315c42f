@@ -1,0 +1,28 @@
+package ch06.unit02;
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+		/*
+		Test5 t;
+		t.a = 10; //컴오류. 초기화 되지 않음
+		*/
+		
+		/*
+		Test5 t = null; // null로 초기화. 메모리할당이 안된 상태
+		t.a = 10; // 런타임오류. NullPointerException 
+		*/
+
+		Test5 t = new Test();
+		t.a = 10;
+	}
+}
+
+class Test5{
+	int a;
+	int b;
+	
+	public void disp() {
+		System.out.println(a + ":" + b);
+	}
+}

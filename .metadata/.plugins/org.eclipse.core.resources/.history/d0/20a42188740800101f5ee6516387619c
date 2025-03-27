@@ -1,0 +1,18 @@
+package ch04.unit03.forEx;
+
+/*
+ 
+ *********
+  *******
+   *****
+    ***
+     *
+ */
+public class EX26_star {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

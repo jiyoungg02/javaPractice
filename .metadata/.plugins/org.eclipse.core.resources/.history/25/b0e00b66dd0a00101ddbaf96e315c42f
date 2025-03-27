@@ -1,0 +1,18 @@
+package ch06.unit02;
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+		Test5 t;
+		t.a = 10;
+	}
+}
+
+class Test5{
+	int a;
+	int b;
+	
+	public void disp() {
+		System.out.println(a + ":" + b);
+	}
+}

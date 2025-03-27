@@ -1,0 +1,40 @@
+package ch06.unit02;
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+		/*
+		Test5 t;
+		t.a = 10; //컴오류. 초기화 되지 않음
+		*/
+		
+		/*
+		Test5 t = null; // null로 초기화. 메모리할당이 안된 상태
+		t.a = 10; // 런타임오류. NullPointerException 
+		*/
+
+		/*
+		Test5 t = new Test5();
+		t.a = 10;
+		t.disp(); // 10:0
+		*/
+		
+		Test5 [] tt = new Test5[5];
+			// Test5 객체를 5개를 저장할 수 있는 배열
+			// 각각의 객체가 메모리를 할당 받은것은 아님
+			// 클래스 객체의 메모리 할당은 생성자를 호출할 경우만 가능
+		/*
+		tt[0].a = 10; // 메모리할당을 하려면 생성자를 불러와야함
+		tt[0].disp(); // 런타임오류 NullPointerException
+		*/
+	}
+}
+
+class Test5{
+	int a;
+	int b;
+	
+	public void disp() {
+		System.out.println(a + ":" + b);
+	}
+}

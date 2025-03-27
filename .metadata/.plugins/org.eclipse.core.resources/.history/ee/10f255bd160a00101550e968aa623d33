@@ -1,0 +1,25 @@
+package ch05.unit02;
+
+import java.util.Scanner;
+
+/*
+	- 성적 처리 프로그램 작성
+	1) 인원수를 입력 받는다.
+	2) 인원수만큼 이름 국,영,수를 입력 받아 총점, 평균, 석차를 계산해서 출력
+*/
+public class Ex07_score {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int count;
+		String []name;
+		int [][]score;
+		int []tot;
+		int []rank;
+		
+		String []subject = {"국어", "영어", "수학"};
+		
+		sc.close();
+		
+	}
+}
