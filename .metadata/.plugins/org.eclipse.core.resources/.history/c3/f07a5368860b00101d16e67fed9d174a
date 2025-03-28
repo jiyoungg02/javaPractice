@@ -1,0 +1,22 @@
+package ch06.unit03;
+
+public class Ex06 {
+	public static void main(String[] args) {
+		Test6 t = new Test6();
+		
+		int a = 10;
+		t.sub1(a);
+		System.out.println("a: " + a); //15
+		
+		
+	}
+}
+
+
+class Test6{
+	int x = 10;
+	
+	public void sub1(int a) {
+		a += 5;
+	}
+}

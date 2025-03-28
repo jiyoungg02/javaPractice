@@ -1,0 +1,25 @@
+package ch06.unit03;
+
+public class Ex15 {
+
+	public static void main(String[] args) {
+		
+	}
+}
+
+//wrapper class : 기본형데이터를 객체로 처리할 수 있도록 만들어진 클래스
+// Byte, Short, Character, Integer, Long, Float, Double 등
+class Test15{
+	public void disp(Short a) {
+		System.out.println("Short : ", a);
+	}
+	
+	public void disp(int a) {
+		System.out.println("int : " + a);
+	}
+	
+	public void disp(Long a) {
+		System.out.println("long : " + a);
+	}
+	
+}

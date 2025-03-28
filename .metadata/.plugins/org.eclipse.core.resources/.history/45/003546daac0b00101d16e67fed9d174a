@@ -1,0 +1,22 @@
+package ch06.unit03;
+
+public class Ex15 {
+
+	public static void main(String[] args) {
+		
+	}
+}
+
+class Test15{
+	public void disp(short a) {
+		System.out.println("Short : ", a);
+	}
+	public void disp(int a) {
+		System.out.println("int : " + a);
+	}
+	
+	public void disp(long a) {
+		System.out.println("long : " + a);
+	}
+	
+}

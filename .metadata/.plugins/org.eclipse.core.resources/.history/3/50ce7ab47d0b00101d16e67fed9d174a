@@ -1,0 +1,30 @@
+package ch06.unit03;
+
+public class Ex04 {
+
+	public static void main(String[] args) {
+		
+	}
+}
+
+class Test4{
+	// 필드 : 인스턴스변수 + 클래스변수
+	
+	// 인스턴스변수
+	int a; // 메모리를 할당받을때 0으로 초기화
+	int b = 10; // 메모리를 할당받을때 0으로 초기화
+	
+	//클래스변수
+	static int c = 100;
+
+	//인스턴스 메소드
+	public int sub(int n) { // n:매개변수
+		int s = 0; // 지역변수
+		
+		s = b + n;
+		
+		return s;
+		
+	}
+
+}

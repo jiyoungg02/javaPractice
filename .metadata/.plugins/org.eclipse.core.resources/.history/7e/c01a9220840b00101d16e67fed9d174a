@@ -1,0 +1,18 @@
+package ch06.score;
+
+import java.util.Scanner;
+
+public class ScoreUI {
+	private Scanner sc = new Scanner(System.in);
+	
+	public void menu() {
+		int ch;
+		
+		while(true) {
+			do {
+				
+			}while(ch < 1 || ch > 7);
+		}
+		
+	}
+}

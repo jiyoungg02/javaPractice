@@ -1,0 +1,18 @@
+package ch06.unit03;
+
+public class Ex08 {
+
+	public static void main(String[] args) {
+		Test7 t = new Test7();
+		int n;
+		n = t.number3();
+		System.out.println("서로 다른 세자리수 : " + n);
+	}
+}
+
+class Test7{
+	// 서로 다른 3자리 정수  : 102 ~ 987
+	public int number3() {
+		
+	}
+}

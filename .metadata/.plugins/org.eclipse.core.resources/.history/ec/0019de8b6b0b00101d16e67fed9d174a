@@ -1,0 +1,32 @@
+package ch06.unit03;
+
+public class Ex01_method {
+	public static void main(String[] args) {
+		
+		
+	}
+}
+
+/*
+	- 지역변수, 매개변수
+	: 메소드 안에서만 사용 가능 
+	: 메소드를 호출할때 메모리를 할당받고, 메소드를 빠져 나가면 메모리 해제
+	
+	- 인스턴스변수
+	: 클래스 안 모든 인스턴스메소드에서 사용 가능
+	
+*/
+class Test1{
+	int a = 10; // 필드 (인스턴스변수)
+	public int sub(int n) { // n : 매개변수(파라미터,인수)
+		int s = 0; // 지역변수
+		
+		
+		return 0;
+		// System.out.println(); // return 아래에는 실행문이 올 수 없음
+	}
+	
+	public void disp() {
+		// System.out.println(s); //컴오류 s는 지역 변수 해당 메소드 안에서만 사용가능
+	}
+}

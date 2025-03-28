@@ -1,0 +1,37 @@
+package ch06.unit03;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		Test2 t = new Test2();
+		int s;
+		String result;
+		
+		
+		s = t.sum(100);
+		System.out.println("결과 : " + s);
+		
+		s =10;
+		result = t.isEven(s) ? "짝수" : "홀수" ;
+		System.out.println(s + " : "+ result);
+		
+	}
+}
+
+class Test2{
+	// 1~n 까지 합구하기
+	
+	public int sum(int n) {
+		int s = 0;
+		for(int i=1; i<=n; i++) {
+			s += i;
+		}
+		return s;
+	}
+	
+	//n이 짝수이면 true, 홀수이면 false를 반환하는 메소드
+	public boolean isEven(int n) {
+		return n%2 == 0;
+	}
+	
+}

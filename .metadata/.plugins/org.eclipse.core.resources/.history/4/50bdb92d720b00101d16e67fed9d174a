@@ -1,0 +1,64 @@
+package ch06.unit03;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		Test2 t = new Test2();
+		int s;
+		String result;
+		char c;
+		int year;
+		
+		s = t.sum(100);
+		System.out.println("결과 : " + s);
+		
+		s =10;
+		result = t.isEven(s) ? "짝수" : "홀수" ;
+		System.out.println(s + " : "+ result);
+		
+		c = 'c';
+		System.out.println(c + "-> " + t.upper(c));
+			
+		year = 2024;
+		System.out.println(year + "년은 윤년이" + t.isLeapYear(year));
+	}
+}
+
+class Test2{
+	// 1~n 까지 합구하기
+	
+	public int sum(int n) {
+		int s = 0;
+		for(int i=1; i<=n; i++) {
+			s += i;
+		}
+		return s;
+	}
+	
+	//n이 짝수이면 true, 홀수이면 false를 반환하는 메소드
+	public boolean isEven(int n) {
+		return n%2 == 0;
+	}
+	
+	// 문자가 소문자이면 true, 그렇지 않으면 false
+	public boolean isLower(char c) {
+		return c >= 'a' && c <= 'z';
+	}
+	
+	// 문자가 대문자이면 true, 그렇지 않으면 false
+	public boolean isUpper(char c) {
+		return c >= 'A' && c <='Z';
+	}
+	
+	// 소문자이면 대문자로 변환
+	public char upper(char c) {
+		// return c >= 'a' && c <= 'z' ? (char)(c-32) : c;
+		// return c >= 'a' && c <= 'z' ? c-=32 : c;
+		return isLower(c) ? c-=32 : c;
+	}
+	
+	//윤년 판단
+	public boolean isLeapYear(int y) {
+		return y%4==0 && y%100!=0 || y%400==0;
+	}
+}

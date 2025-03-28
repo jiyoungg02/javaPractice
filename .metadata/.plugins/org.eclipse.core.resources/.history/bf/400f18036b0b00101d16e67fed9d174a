@@ -1,0 +1,27 @@
+package ch06.unit03;
+
+public class Ex01_method {
+	public static void main(String[] args) {
+		
+		
+	}
+}
+
+/*
+	- 지역변수, 매개변수
+	: 메소드 안에서만 사용 가능 
+*/
+class Test1{
+
+	public int sub(int n) { // n : 매개변수(파라미터,인수)
+		int s = 0; // 지역변수
+		
+		
+		return 0;
+		// System.out.println(); // return 아래에는 실행문이 올 수 없음
+	}
+	
+	public void disp() {
+		System.out.println(s);
+	}
+}

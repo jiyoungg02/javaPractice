@@ -1,0 +1,43 @@
+package ch06.unit03;
+
+public class Ex08 {
+
+	public static void main(String[] args) {
+		Test8 t = new Test8();
+		int n;
+		n = t.number3();
+		System.out.println("서로 다른 세자리수 : " + n);
+	}
+}
+
+class Test8{
+	// 서로 다른 3자리 정수  : 102 ~ 987
+	public int number3() {
+		int m1, m2, m3;
+		
+		m1 = (int)(Math.random()*9) + 1; //1~9 사이 정수
+		
+		
+		
+		/*
+		int n, s=0;
+		for(int i=1; i<=100; i*=10) {
+			for(int j=0; j<2; j++) {
+				do {
+					if(i==100) {
+						n = (int)(Math.random() * 10) + 1;
+					}else {
+						n = (int)(Math.random() * 10);
+					}
+				}while(n != 10);
+				if(s%10 > 0 && s%10 == n) {
+					i /= 10;
+					break;
+				}else if()
+				s += n * i;
+			}
+		}
+		*/
+		return m1 * 100;
+	}
+}
